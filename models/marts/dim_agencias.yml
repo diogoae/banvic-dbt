@@ -1,0 +1,18 @@
+models:
+  - name: dim_agencias
+    description: Tabela dimensão com dados das agências do Banvic
+    columns:
+      - name: pk_agencia
+        description: Chave primária do cadastro de agências
+      - name: nome_agencia
+        description: Nome da agência
+      - name: endereco_agencia
+        description: Endereço da agência
+      - name: data_abertura_agencia
+        description: Data de abertura da agência
+      - name: tipo_agencia
+        description: Tipo da agência
+      - name: cidade_agencia
+        description: Cidade da agência
+      - name: uf_agencia
+        description: UF da agência
