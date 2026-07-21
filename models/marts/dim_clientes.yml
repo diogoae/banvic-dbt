@@ -1,0 +1,27 @@
+models:
+  - name: dim_clientes
+    description: Tabela dimensão com dados dos clientes PF/PJ do Banvic
+    columns:
+      - name: pk_cliente
+        description: Chave primária do cadastro de clientes
+      - name: nome_cliente
+        description: Nome do cliente
+      - name: email_cliente
+        description: Email do cliente
+      - name: tipo_cliente
+        description: Tipo do cliente (PF/PJ)
+      - name: ts_inclusao
+        description: Data de inclusão do cliente
+      - name: cpfcnpj_cliente
+        description: Documento do cliente (CPF/CNPJ)
+      - name: data_nascimento_cliente
+        description: Data de nascimento do cliente
+      - name: endereco_cliente
+        description: Endereço do cliente
+      - name: cep_cliente
+        description: CEP do cliente
+      - name: cidade_cliente
+        description: Cidade do cliente
+      - name: uf_cliente
+        description: UF do cliente
+                   
