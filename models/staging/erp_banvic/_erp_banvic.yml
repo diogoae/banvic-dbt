@@ -37,9 +37,34 @@ sources:
               - unique
               - not_null      
       - name: colaborador_agencia
+        description: Relacionamento colaborador x agencia
         data_tests:
           - dbt_utils.unique_combination_of_columns:
               arguments:
                 combination_of_columns:
                   - cod_colaborador
                   - cod_agencia      
+      - name: contas
+        description: Tabela de informações das contas bancárias dos clientes
+        columns:
+          - name: num_conta
+            description: Chave primária da tabela de cadastro de contas
+            data_tests:
+              - unique
+              - not_null              
+      - name: propostas_credito
+        description: Tabela de propostas de credito feitas aos clientes
+        columns:
+          - name: cod_proposta
+            description: Chave primária da tabela de propostas de credito
+            data_tests:
+              - unique
+              - not_null              
+      - name: transacoes
+        description: Tabela de transações financeiras
+        columns:
+          - name: cod_transacao
+            description: Chave primária da tabela de transacoes
+            data_tests:
+              - unique
+              - not_null
